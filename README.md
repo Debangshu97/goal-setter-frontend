@@ -1,46 +1,67 @@
-# Getting Started with Create React App and Redux
+# Goalsetter MERN app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+[Visit The Website!](https://main--goal-setter-personal.netlify.app/)
 
-## Available Scripts
+# Note
+- This is the frontend code for the project .
+  Check the backend code in the repo link below
 
-In the project directory, you can run:
+[See backend code here..](https://github.com/Debangshu97/goal-setter-backend)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Goal Setter is a webapp made using MERN stack which lets you login as as user and list your goals for the day or a longer period of time !
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following technologies:
 
-### `npm run build`
+- React
+- Redux Toolkit
+- JWT
+- Nodejs
+- MongoDb
+- Express.js
+- Mongoose
+- RESTful Api
+- Axios
+- Netlify
+- Render
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Objectives
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The idea is described in the following points:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This is a webapp with 3 pages. We see the Login Page at first , the Register page and the Goals page.
+- The users profile details and chat history are stored in a Mongodb Atlas Cluster
+- I used React styled components to style the webapp
+- I use React for the frontend and Nodejs , Expressjs for the backend and use Socket.io to relay information using websockets
+- Created a RESTful API from scratch with Node.js, Express, MongoDB and Mongoose.
+- Secure our API by adding JWT authentication
+- Create our frontend and add authentication using Redux Toolkit to manage our global state.
+- added the goals functionality and add goals to our Redux state
+- Implement best practices and standards when structuring the files using nested elements, indentation, comments, and line breaks
+- I used netlify to deploy and host the app as it is very convenient and free.
+- I used Render to host the backend as a web service for free.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a  .env file and add your MONGO_URI
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+# Backend deps
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Frontend deps
+cd frontend
+npm install
+```
 
-## Learn More
+### Run Server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm run server
+```
